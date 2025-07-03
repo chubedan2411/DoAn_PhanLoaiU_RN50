@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Neuro Scan Care</title>
+    <link rel="stylesheet" href="/static/Css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="/static/Image/logo.jpg" alt = "Logo">
+            <span class="logo-text"> 
+                NEURO SCAN CARE
+            </span>
+        </a>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="/intro" class="nav-item">Giới thiệu</a></li>
+                <li><a href="/guide" class="nav-item">Hướng dẫn</a></li>
+                <li><a href="/contact" class="btn btn-primary">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section class="hero">
+        <h1>Hệ thống <span class="hero-highlight">AI</span> Phân loại khối u não</h1>
+        <p>Phát hiện và phân loại chính xác các loại khối u não tù ảnh MRI</p>
+    </section>
+
+    <!--Features-->
+    <div class="features">
+        <div class="feature">
+            <a href="/intro" class="feature-list">
+                <img src ="/static/Image/brain.png" class="feature-icon">
+                <h3>Giới thiệu hệ thống và các loại khối u não hiện có</h3>
+            </a>
+        </div>
+
+        <div class="feature" >
+            <a href="/guide" >
+                <img src ="/static/Image/brain.png" class="feature-icon">
+                <h3>Hướng dẫn sử dụng hệ thống</h3>
+            </a>
+        </div>
+
+        <div class="feature">
+            <a href="/contact" class="feature-list">
+                <img src="/static/Image/brain.png" class="feature-icon">
+                <h3>Liên hệ với nhóm phát triển</h3>
+            </a>
+        </div>
+    </div>
+
+    <!--Contact Section-->
+    <section class="contact-section">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+
+        <form class="contact-form" action="#" method="POST">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn" required>
+
+            <label for="subject">Chủ đề</label>
+            <input type="text" id="subject" name="subject" placeholder="Nhập chủ đề liên hệ">
+
+            <label for="message">Nội dung</label>
+            <textarea id="message" name="message" placehold="Nhập nội dung cần hỗ trợ" required></textarea>
+
+            <button type="submit">Gửi liên hệ</button>
+
+            <div class="success-message" id="success-msg">
+                Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất đến bạn.
+            </div>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="/static/Image/logo.jpg" alt="NeuroScanCare Logo">
+            </div>
+
+            <div class="footer-column">
+                <h3>Liên hệ với chúng tôi</h3>
+                <ul>
+                    <li><a href="#">Trường Đại học Nguyễn Tất Thành, khoa CNTT</a></li>
+                    <li><a href="#">Hotline: 056 300 3854</a></li>
+                    <li><a href="#">Contact me: 2100008851@nttu.edu.vn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Hỗ trợ</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Khối u não</a></li>
+                    <li><a href="#">Tin tức Y khoa</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Optional: Script to show success message-->
+    <script>
+        const form = document.querySelector('.contact-form');
+        const successMsg = document.getElementById('success-msg');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successMsg.style.display = 'block';
+            form.reset();
+        });
+    </script>
+</body>
+</html>

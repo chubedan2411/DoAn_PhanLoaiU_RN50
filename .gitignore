@@ -1,0 +1,25 @@
+# Python specific
+__pycache__/
+*.pyc
+# Virtual environments
+.venv/
+venv/
+
+# IDEs and OS files
+.vscode/
+.idea/
+*.log
+*.swp
+.DS_Store
+
+# Machine Learning models and large data files
+*.h5
+*.pth
+*.pt
+*.bin
+*.onnx
+*.pkl
+*.pickle
+*.data
+*.index
+*.meta

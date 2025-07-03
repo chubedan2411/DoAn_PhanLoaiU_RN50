@@ -1,0 +1,1 @@
+[{"appName":"Zing Speed Mobile","appPackage":"com.vng.speedvn","appVersion":"1.47.0.10096"}]
